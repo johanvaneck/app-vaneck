@@ -4,154 +4,160 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Van Eck Group</title>
+	<title>Van Eck Group - Innovative Solutions</title>
+	<meta name="description"
+		content="Explore the diverse ventures within Van Eck Group, including our software solutions, photography services, and teaching resources.">
+	<meta name="keywords"
+		content="Van Eck Group, software, photography, teaching resources, technology, education, visual arts">
+	<meta name="author" content="Van Eck Group">
+	<link rel="canonical" href="https://vaneck.app/">
 
-	<meta property="og:title" content="Van Eck Group" />
-	<meta property="og:description" content="Software, Photography, Teaching" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://vaneck.app/" />
-	<meta property="og:image" content="https://vaneck.app/public/images/vaneck-logo.png" />
-	<meta property="og:site_name" content="Van Eck Group" />
+	<meta property="og:title" content="Van Eck Group - Innovative Solutions">
+	<meta property="og:description"
+		content="Explore the diverse ventures within Van Eck Group, including our software solutions, photography services, and teaching resources.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://vaneck.app/">
+	<meta property="og:image" content="https://vaneck.app/images/logo.png">
+	<meta property="og:site_name" content="Van Eck Group">
+	<meta property="og:locale" content="en_US">
 	<style>
-		/* --- Global Styles & Color Scheme --- */
-		:root {
-			--teal-dark: #004d40;
-			/* Darker teal for headings/accents */
-			--teal-medium: #00897b;
-			/* Medium teal for backgrounds/borders */
-			--teal-light: #b2dfdb;
-			/* Light teal for subtle backgrounds */
-			--text-dark: #212121;
-			/* Dark grey for text */
-			--text-light: #ffffff;
-			/* White text */
-			--background-light: #f4f4f4;
-			/* Light grey background */
-		}
-
 		body {
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			font-family: sans-serif;
 			margin: 0;
-			padding: 0;
-			background-color: var(--background-light);
-			color: var(--text-dark);
-			line-height: 1.6;
+			background-color: #ece6db;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			padding: 20px;
+			box-sizing: border-box;
 		}
 
-		/* --- Header --- */
-		.main-header {
-			background-color: var(--teal-dark);
-			color: var(--text-light);
-			padding: 2rem 1rem;
+		header {
 			text-align: center;
-			margin-bottom: 3rem;
-			/* Space below header */
+			margin-bottom: 30px;
+			width: 100%;
 		}
 
-		.main-header h1 {
-			margin: 0;
-			font-size: 2.5rem;
-			font-weight: 300;
-			/* Lighter font weight for minimalist feel */
+		.logo-container {
+			margin-bottom: 15px;
 		}
 
-		/* --- Main Content Area --- */
-		.container {
-			max-width: 960px;
-			/* Limit content width */
-			margin: 0 auto;
-			/* Center the container */
-			padding: 0 1rem;
-			/* Padding on the sides */
+		.logo {
+			max-width: 90vw;
+			width: 500px;
+			height: auto;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		}
 
-		/* --- Sub-Company Sections --- */
-		.sub-company-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			/* Responsive grid */
-			gap: 2rem;
-			/* Space between grid items */
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+			padding: 20px;
+			max-width: 800px;
+			margin-bottom: 40px;
 		}
 
-		.sub-company {
-			background-color: var(--text-light);
-			/* White background for cards */
-			border: 1px solid var(--teal-light);
-			/* Subtle teal border */
-			border-top: 5px solid var(--teal-medium);
-			/* Stronger top border */
-			padding: 1.5rem;
+		.card {
+			background-color: rgba(0, 65, 51, 0.15);
+			border-radius: 10px;
+			padding: 20px;
 			text-align: center;
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
-			/* Smooth hover effect */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(0, 65, 51, 0.25);
+			transition: transform 0.3s ease-in-out;
+			width: 200px;
 		}
 
-		.sub-company:hover {
+		.card:hover {
 			transform: translateY(-5px);
-			/* Slight lift on hover */
-			box-shadow: 0 4px 15px rgba(0, 77, 64, 0.15);
-			/* Subtle shadow matching teal */
 		}
 
-		.sub-company h2 {
-			color: var(--teal-dark);
+		.card a {
+			text-decoration: none;
+			color: #004133;
+			font-weight: bold;
+			display: block;
+			padding: 10px 0;
+		}
+
+		.card a:hover {
+			color: #002e24;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+			padding: 20px;
+			max-width: 800px;
+		}
+
+		h1 {
+			color: #004133;
 			margin-top: 0;
-			margin-bottom: 1rem;
-			font-weight: 500;
+			margin-bottom: 10px;
 		}
 
-		.sub-company p {
-			font-size: 0.95rem;
-			margin-bottom: 0;
-		}
-
-		/* --- Footer --- */
-		.main-footer {
+		footer {
 			text-align: center;
-			margin-top: 3rem;
-			padding: 1rem;
-			font-size: 0.85rem;
-			color: var(--teal-medium);
+			padding: 10px 0;
+			color: #004133;
+			font-size: 0.9em;
+		}
+
+		footer a {
+			color: #004133;
+			text-decoration: none;
+		}
+
+		footer a:hover {
+			text-decoration: underline;
 		}
 	</style>
 </head>
 
 <body>
-
-	<header class="main-header">
-		<h1>Van Eck Group</h1>
+	<header>
+		<div class="logo-container">
+			<img src="images/logo.png" alt="Van Eck Group Logo" class="logo">
+		</div>
 	</header>
 
-	<main class="container">
-		<div class="sub-company-grid">
-			<a href="https://software.vaneck.app">
-				<section class="sub-company">
-					<h2>Software</h2>
-					<p>Full Stack Software development.</p>
-				</section>
-			</a>
-
-			<a href="https://photography.vaneck.app">
-				<section class="sub-company">
-					<h2>Photography</h2>
-					<p>Professional photography.</p>
-				</section>
-			</a>
-
-			<a href="https://teaching.vaneck.app">
-				<section class="sub-company">
-					<h2>Teacher</h2>
-					<p>Teaching resources.</p>
-				</section>
-			</a>
+	<main>
+		<div class="container">
+			<div class="card">
+				<a href="https://v3ck.com" title="Discover Van Eck Software Solutions"
+					target="_blank">Software Solutions</a>
+			</div>
+			<div class="card">
+				<a href="https://photography.vaneck.app" title="View Van Eck Photography"
+					target="_blank">Photography</a>
+			</div>
+			<div class="card">
+				<a href="https://teach.vaneck.app" title="Explore Van Eck Teaching Resources"
+					target="_blank">Teaching Resources</a>
+			</div>
 		</div>
 	</main>
 
-	<footer class="main-footer">
-		<p>&copy; 2025 Van Eck Group. All rights reserved.</p>
+	<footer>
+		&copy; <span id="currentYear"></span> Van Eck Group
 	</footer>
 
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const yearSpan = document.getElementById('currentYear');
+			const currentYear = new Date().getFullYear();
+			yearSpan.textContent = currentYear;
+		});
+	</script>
 </body>
 
 </html>
